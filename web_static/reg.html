@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Registration</h1>
+    </header>
+    <main>
+        <form class="registration-form">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+</html>
+CSS:
+css
+Copy code
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.registration-form input {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    width: 300px;
+}
+
+.registration-form button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #555;
+}
+4. User Interaction History View:
+HTML:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interaction History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Interaction History</h1>
+    </header>
+    <main>
+        <section class="interaction-history">
+            <article class="interaction-item">
+                <h2>Boeing 747</h2>
+                <p><strong>Interaction Type:</strong> Viewed</p>
+                <p><strong>Date:</strong> 2024-06-20</p>
+                <a href="aircraft.html?id=1">View Details</a>
+            </article>
+            <!-- Repeat for more interaction items -->
+        </section>
+    </main>
+</body>
+</html>

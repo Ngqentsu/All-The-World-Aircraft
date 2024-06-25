@@ -1,0 +1,58 @@
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 300px;
+}
+
+.search-form button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    margin-left: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aircraft-item {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 1em;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aircraft-item h2 {
+    margin-top: 0;
+}
+
+.aircraft-item a {
+    display: inline-block;
+    margin-top: 1em;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.aircraft-item a:hover {
+    background-color: #333;
+    color: #fff;
+}
