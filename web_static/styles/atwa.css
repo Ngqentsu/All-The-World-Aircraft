@@ -1,0 +1,114 @@
+.aircraft {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.aircraft h1 {
+    font-size: 30px;
+}
+
+.aircraft_title {
+    padding-top: 30px;
+    margin-bottom: -25px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 390px;
+    margin: 20px;
+    padding: 20px;
+    border: solid #0047AB 1px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+article h2 {
+    font-size: 30px;
+    margin-top: -1px;
+    padding-left: 0%;
+}
+
+.article_title {
+    width: 100%;
+}
+
+.year_of_introduction {
+    color: #0047AB;
+    border: 4px solid #0047AB;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    margin-top: -5px;
+}
+
+.year {
+    margin-top: -1px;
+}
+
+.price_title {
+    display: flex;
+}
+
+.information {
+    height: 80px;
+    border-top: solid #DDDDDD 1px;
+    border-bottom: solid #DDDDDD 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.max_speed, .range, .engine_type {
+    width: 100px;
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.speed_icon, .range_icon, .engine_icon {
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    margin-left: 35px;
+}
+
+.speed_value h2, .range_value h2, .engine_value h2 {
+    font-size: 14px;
+    color:  #484848;
+    font-weight: normal;
+}
+
+.manufacturer {
+    font-size: 14px;
+    color: #484848;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.description {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
