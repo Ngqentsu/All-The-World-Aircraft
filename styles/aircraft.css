@@ -9,3 +9,9 @@
     background-position: center;
     height: 100vh;
 }
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
