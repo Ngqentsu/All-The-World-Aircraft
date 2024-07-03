@@ -4,19 +4,8 @@
 }
 
 #banner {
-    background: url(images/Airbus_A320.jpg) no-repeat center center;
+    background: linear-gradient (rgba(0,0,0,0.5) #009688) url(images/Airbus_A320.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-#banner h1 {
-    font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
 }
