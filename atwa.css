@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.5), #0096), url(images/Airbus_A320.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1 {
+    font-size: 100px;
+}
+.banner-text p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#SideNav {
+    height: 100vh;
+    width: 150px;
+    position: fixed;
+    right: -150px;
+    top: 0;
+    background: #0096;
+    z-index: 2;
+    transition: right 0.3s;
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0096;
+    z-index: 3;
+    padding: 0;
+}
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+nav ul li .dropdown-menu li {
+    margin: 0;
+    padding: 10px 20px;
+}
+nav ul li .dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menubtn {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    background: #0096;
+    text-align: center;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+#aircraft {
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #0096), url(images/background.jpg);
+}
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p {
+    margin: auto;
+    font-size: 50px;
+    color: #00000;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.Manufacturer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Manufacturer > div {
+    position: relative;
+    width: calc(25% - 20px);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Manufacturer .Boeing {
+    background-image: url('images/Boeing_737.jpeg');
+}
+
+.Manufacturer .Airbus {
+    background-image: url('images/Airbus_A320.jpg');
+}
+
+.Manufacturer .Bombardier {
+    background-image: url('images/Bombardier-Q400.jpg');
+}
+
+.Manufacturer .Lockheed_Martin {
+    background-image: url('images/f-22-raptor.jpg');
+}
+
+.aircraft-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.Manufacturer > div:hover .aircraft-info {
+    transform: translateY(0);
+}
+
+.aircraft-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.dropdown-section {
+    margin-bottom: 15px;
+}
+
+.dropdown-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-section:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content p {
+    margin: 0;
+    font-size: 1rem;
+}
