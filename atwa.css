@@ -63,7 +63,7 @@ nav ul li a {
 #aircraft {
     width: 100%;
     padding: 70px 0;
-    background: url(images/background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #0096), url(images/background.jpg);
 }
 .title-text {
     text-align: center;
@@ -82,50 +82,23 @@ nav ul li a {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-round;
+    justify-content: space-between;
     margin: auto;
 }
-.Boeing {
+.Manufacturer div {
     flex-basis: 48%;
     text-align: center;
     border-radius: 7px;
     margin-bottom: 20px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
 }
-.Boeing img {
+.Manufacturer img {
     width: 100%;
-    border-radius: 7px;
-}
-.Airbus {
-    flex-basis: 48%;
-    text-align: center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.Airbus img {
-    width: 100%;
-    border-radius: 7px;
-}
-.Bombadier {
-    flex-basis: 48%;
-    text-align: center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.Bombadier img {
-    width: 100%;
-    border-radius: 7px;
-}
-.Lockheed_Martin {
-    flex-basis: 48%;
-    text-align: center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.Lockheed_Martin img {
-    width: 100%;
+    height: auto;
     border-radius: 7px;
 }
