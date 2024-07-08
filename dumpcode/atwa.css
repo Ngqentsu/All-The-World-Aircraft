@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.5), #0096), url(images/Airbus_A320.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1 {
+    font-size: 100px;
+}
+.banner-text p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#SideNav {
+    height: 100vh;
+    width:150px;
+    position: fixed;
+    right: -150px; /* Initially hidden */
+    top: 0;
+    background: #0096;
+    z-index: 2;
+    transition: right 0.3s;
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:#fff;
+}
+
+#menubtn {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    background: #0096;
+    text-align: center;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+#aircraft {
+    background: url('images/f-22-raptor.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.aircraft-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aircraft-info {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aircraft-info h2 {
+    margin-bottom: 10px;
+}
+
+.aircraft-info p {
+    margin: 5px 0;
+}

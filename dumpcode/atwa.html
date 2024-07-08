@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>All The World's Aircraft</title>
+    <link rel="stylesheet" href="dumpcode/atwa.css">
+</head>
+
+<body>
+
+<section id="banner">
+  <div class="banner-text">
+    <h1>All The World's Aircraft</h1>
+    <p>Global Aircraft Knowledge at Your Fingertips!</p>
+</section>
+
+<div id="SideNav">
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">AIRCRAFT</a>
+        <ul class="dropdown">
+            <li><a href="#boeing">Boeing 737</a></li>
+            <li><a href="#airbus">Airbus A320</a></li>
+            <li><a href="#bombardier">Bombardier Q400</a></li>
+            <li><a href="#blackbird">SR-71 Blackbird</a></li>
+        </ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div id="menubtn">
+  <img src="images/menu_icon.jpg" id="menu">
+</div>
+
+<section id="aircraft">
+  <div class="aircraft-container">
+    <div id="boeing" class="aircraft-info" style="background-image: url('images/Boeing_737.jpeg');">
+      <h2>Boeing 737</h2>
+      <p>Year of Introduction: 1968</p>
+      <p>Max Speed: 876 km/h</p>
+      <p>Range: 5,765 km</p>
+      <p>Engine Type: CFM56</p>
+    </div>
+    <div id="airbus" class="aircraft-info" style="background-image: url('images/Airbus_A320.jpg');">
+      <h2>Airbus A320</h2>
+      <p>Year of Introduction: 1988</p>
+      <p>Max Speed: 871 km/h</p>
+      <p>Range: 6,100 km</p>
+      <p>Engine Type: CFM56</p>
+    </div>
+    <div id="bombardier" class="aircraft-info" style="background-image: url('images/Bombardier-Q400.jpg');">
+      <h2>Bombardier Q400</h2>
+      <p>Year of Introduction: 2000</p>
+      <p>Max Speed: 667 km/h</p>
+      <p>Range: 2,522 km</p>
+      <p>Engine Type: PW150A</p>
+    </div>
+    <div id="blackbird" class="aircraft-info" style="background-image: url('images/SR-71_Blackbird.jpg');">
+      <h2>SR-71 Blackbird</h2>
+      <p>Year of Introduction: 1966</p>
+      <p>Max Speed: 3,540 km/h</p>
+      <p>Range: 5,400 km</p>
+      <p>Engine Type: Pratt & Whitney J58</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  var menubtn = document.getElementById("menubtn");
+  var SideNav = document.getElementById("SideNav");
+  var menu = document.getElementById("menu");
+
+  menubtn.onclick = function() {
+      if (SideNav.style.right === "-150px") {
+          SideNav.style.right = "0";
+      } else {
+          SideNav.style.right = "-150px";
+      }
+  };
+</script>
+</body>
+
+</html>
