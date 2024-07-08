@@ -39,3 +39,21 @@ nav ul li a {
     text-decoration: none;
     color:#fff;
 }
+
+#menubtn {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    background: #0096;
+    text-align: center;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    width: 20px;
+    margin-top: 15px;
+}
