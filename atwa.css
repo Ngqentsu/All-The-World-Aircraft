@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #banner {
@@ -35,10 +36,25 @@
 nav ul li {
     list-style: none;
     margin: 50px 20px;
+    position: relative;
 }
 nav ul li a {
     text-decoration: none;
     color:#fff;
+}
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0096;
+    z-index: 3;
+}
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+nav ul li .dropdown-menu li {
+    margin: 0;
 }
 
 #menubtn {
@@ -94,7 +110,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
 }
 .Manufacturer img {
